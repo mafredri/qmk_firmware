@@ -30,9 +30,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *                                        ,-------------.  ,-------------.
      *                                        | LGui | LAlt |  | RAlt | RGui |
      *                                 ,------|------|------|  |------+------+------.
-     *                                 |      |      | Home |  | PgUp |      |      |
+     *                                 |      |      | LCtl |  | RCtl |      |      |
      *                                 |Backsp|Delete|------|  |------|Enter |Space |
-     *                                 |ace   |      | End  |  | PgDn |      |      |
+     *                                 |ace   |      | PgUp |  | PgDn |      |      |
      *                                 `--------------------'  `--------------------'
      */
     // If it accepts an argument (i.e, is a function), it doesn't need KC_.
@@ -45,8 +45,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_LSFT, KC_Z, KC_X, KC_C, KC_V, KC_B, MO(MDIA),  //
         KC_LCTL, KC_GRV, KC_NUBS, KC_LEFT, KC_RGHT,       //
         KC_LGUI, KC_LALT,                                 //
-        KC_HOME,                                          //
-        KC_BSPC, KC_DEL, KC_END,
+        KC_LCTL,                                          //
+        KC_BSPC, KC_DEL, KC_PGUP,
         // right hand
         MO(PROG), KC_6, KC_7, KC_8, KC_9, KC_0, KC_MINS,          //
         MO(SYMB), KC_Y, KC_U, KC_I, KC_O, KC_P, KC_BSLS,          //
@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         MO(MDIA), KC_N, KC_M, KC_COMM, KC_DOT, KC_SLSH, KC_RSFT,  //
         KC_UP, KC_DOWN, KC_LBRC, KC_RBRC, KC_RCTL,                //
         KC_RALT, KC_RGUI,                                         //
-        KC_PGUP,                                                  //
+        KC_RCTL,                                                  //
         KC_PGDN, KC_ENT, KC_SPC),
 
     /* Keymap 1: Symbol Layer
